@@ -1,10 +1,13 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0px;
 	padding: 40px;
   background-color: #1a1a1b;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -26,11 +29,24 @@ h2 {
 	margin-top: 0px;
 }
 
+p {
+	color: #fff;
+	font-size: 18px;
+}
+
+a {
+	color: #f61067;
+}
+
 img {
 	max-width:100%;
 }
 
-.header {
+ul {
+	color: #fff;
+}
+
+.home-header {
 	display: flex;
 	flex-direction: column;
 	max-width: 601px;
@@ -62,7 +78,9 @@ img {
 .bottom-stripe {
 }
 
-.container {
+.subpage-container {
+	display: flex;
+	justify-content: center;
 }
 
 .prev-row {
@@ -73,27 +91,106 @@ img {
 
 .preview {
 	z-index: 1;
+	position: relative;
+	width: 600px;
+	display: flex;
+	justify-content: center;
+}
+
+.image-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: opacity 0.2s ease;
 	opacity: 1;
+	z-index: 1;
 }
 
-.preview a {
+.preview-image {
 	margin: 10px;
 	max-width: 600px;
 	max-height: 300px;
 }
 
-.preview:hover {
+.image-container:hover {
 	opacity: 0;
 }
 
-.content-body {
-	max-width: 700px;
+.sub-preview-text {
 	display: flex;
-	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.sub-preview-text h2 {
+	margin-bottom: 5px;
+}
+
+.sub-preview-text p {
+	color: #f61067;
+	margin-top: 0px;
+}
+
+/*Styles for non-home pages*/
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-container img {
+	width: 300px;
+	z-index: 1;
+	margin: 80px 0 104px 0;
+}
+
+.content-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+nav ul {
+	padding: 0px;
+	display: flex;
+}
+
+nav li {
+	color: #fff;
+	list-style: none;
+}
+
+nav li:hover {
+	color: #f61067;
+}
+
+.restrict-img {
+	max-width: 700px;
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 @media screen and (max-width: 950px) {
@@ -105,5 +202,21 @@ img {
 @media screen and (max-width: 768px) {
 	.prev-row {
 		flex-wrap: wrap;
+	}
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+	}
+	nav a {
+		margin: 5px 10px;
+	}
+	.restrict-img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.list {
+		flex-direction: column;
 	}
 }
