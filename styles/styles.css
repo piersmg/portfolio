@@ -64,18 +64,25 @@ ul {
 	width: 125px;
   height: 700px;
   position: absolute;
-	-ms-transform: rotate(135deg); /* IE 9 */
-  -webkit-transform: rotate(135deg); /* Safari 3-8 */
-  transform: rotate(135deg);
-  z-index: 0;
-}
-
-.top-stripe {
-	top: -200px;
+  top: -200px;
   right: 45px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari 3-8 */
+  transform: rotate(-45deg);
+  z-index: 0;
+  -webkit-transition: all 1.5s ease;  
+  -moz-transition: all 1.5s ease;  
+  -o-transition: all 1.5s ease;  
+  -ms-transition: all 1.5s ease;  
+  transition: all 1.5s ease;
 }
 
-.bottom-stripe {
+.transition-active {
+	z-index: 10;
+  right: -1000px;
+  width: 4000px;
+  height: 3000px;
+  border-radius: 3000px;
 }
 
 .subpage-container {
@@ -193,9 +200,7 @@ nav li:hover {
 }
 
 @media screen and (max-width: 950px) {
-	.top-stripe {
-		/*display: none;*/
-	}
+
 }
 
 @media screen and (max-width: 768px) {
