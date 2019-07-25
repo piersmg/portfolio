@@ -111,7 +111,7 @@ h2 {
 		margin-top: 5px;
 		margin-left: 0px;
 	}
-	.guideline img {
-		max-width: 100%;
+	.guideline img, #mi-sol-menu img, #mi-sol-final img {
+		width: 100%;
 	}
 }
