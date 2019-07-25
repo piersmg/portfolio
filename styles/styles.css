@@ -70,11 +70,11 @@ ul {
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
   z-index: 0;
-  -webkit-transition: all 0.5s ease;  
-  -moz-transition: all 0.5s ease;  
-  -o-transition: all 0.5s ease;  
-  -ms-transition: all 0.5s ease;  
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.35s ease;  
+  -moz-transition: all 0.35s ease;  
+  -o-transition: all 0.35s ease;  
+  -ms-transition: all 0.35s ease;  
+  transition: all 0.35s ease;
 }
 
 .transition-active {
@@ -96,6 +96,19 @@ ul {
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
+  -webkit-transition: all 0.35s ease;  
+  -moz-transition: all 0.35s ease;  
+  -o-transition: all 0.35s ease;  
+  -ms-transition: all 0.35s ease;  
+  transition: all 0.35s ease;
+}
+
+.pink-transition-active {
+	width: 125px;
+  height: 700px;
+  top: -200px;
+  right: 45px;
+  z-index: 0;
 }
 
 .subpage-container {
@@ -153,6 +166,10 @@ ul {
 .sub-preview-text p {
 	color: #f61067;
 	margin-top: 0px;
+}
+
+#email {
+	margin-top: 40px;
 }
 
 /*Styles for non-home pages*/
