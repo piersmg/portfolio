@@ -7,6 +7,9 @@ $(".transition").click(function(e) {
 
 $(function() {
 	var referrer = document.referrer;
+  if (referrer != 'https://piersmg.github.io/') {
+    $('.pink-cover').css( "display", "none" );
+  }
   if (referrer == 'https://piersmg.github.io/') {
   	$('.pink-cover').animate(
     {width: '0px'},
