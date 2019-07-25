@@ -7,7 +7,7 @@ $(".transition").click(function(e) {
 
 $(function() {
 	var referrer = document.referrer;
-  if (referrer == 'https://www.piersgarthwaite.com') {
+  if (referrer == 'https://piersmg.github.io/') {
   	$('.pink-cover').animate(
     {width: '0px'},
     {height: '0px'},
