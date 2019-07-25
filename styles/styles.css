@@ -229,6 +229,13 @@ ul {
 	align-items: center;
 }
 
+.text-body {
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	max-width: 700px;
+}
+
 nav {
 	display: flex;
 	justify-content: center;
