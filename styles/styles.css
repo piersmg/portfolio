@@ -237,3 +237,13 @@ nav li:hover {
 		flex-direction: column;
 	}
 }
+
+@media screen and (max-width: 425px) {
+	h1 {
+		font-size: 34px;
+	}
+	.sub-preview-text {
+		display: none;
+	}
+}
+
