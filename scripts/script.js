@@ -1,16 +1,17 @@
-// $(document).ready(function() {
-//      var objHeight = 0
-//      var imgHeight = $('.preview-image').height();
-//      // $.each($('.preview').children(), function() {
-//      //        objHeight += $(this).height();
-//      // });
-//      $('.preview').height(imgHeight);
-// })
+$(".transition").click(function(e) {
+	e.preventDefault();
+  var linkUrl = $(this).attr('href');
+  setTimeout(function(url) { window.location = url; }, 300, linkUrl);
+  $('.stripe').toggleClass('transition-active');
+});
 
-// var $child = $('.image-container');
-// var $parent = $('.tabbed_title');
-
-// $("#radioButton").change(function () {
-//     var childHeight = $child.height();
-//     $parent.height(childHeight);
-// });
+$(function() {
+	var referrer = document.referrer;
+  if (referrer == 'https://www.piersgarthwaite.com') {
+  	$('.pink-cover').animate(
+    {width: '0px'},
+    {height: '0px'},
+    {top: '-200px'},
+    {right: '45px'}, 900);
+  }
+});
