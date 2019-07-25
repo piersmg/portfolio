@@ -18,7 +18,8 @@ h1 {
 	color: #fff;
 	font-weight: 300;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
+	margin-left: -4px;
 	z-index: 1;
 }
 
@@ -49,8 +50,8 @@ ul {
 .home-header {
 	display: flex;
 	flex-direction: column;
-	max-width: 601px;
-	align-items: center;
+	margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .header-container {
@@ -111,6 +112,46 @@ ul {
   z-index: 0;
 }
 
+.info {
+	display: flex;
+	flex-direction: row;
+}
+
+.about-me {
+	display: flex;
+	z-index: 1;
+}
+
+.about-me p {
+	font-size: 16px;
+	text-align: justify;
+	max-width: 550px;
+}
+
+.home-links {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 0 0 50px;
+	z-index: 1;
+}
+
+.home-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 10px 0 0 0;
+	color: #fff;
+}
+
+#email {
+	margin-top: 3px;
+}
+
+.home-links a:hover {
+	color: #f61067;
+}
+
 .subpage-container {
 	display: flex;
 	justify-content: center;
@@ -168,9 +209,6 @@ ul {
 	margin-top: 0px;
 }
 
-#email {
-	margin-top: 40px;
-}
 
 /*Styles for non-home pages*/
 
@@ -196,14 +234,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-
-.nav-home a {
-	color: #fff;
-}
-
-.nav-home a:hover {
-	color: #f61067;
 }
 
 .nav-list {
@@ -248,8 +278,17 @@ nav li:hover {
 }
 
 @media screen and (max-width: 768px) {
+	.info {
+		flex-direction: column;
+	}
+	.home-links {
+		margin: 0px;
+	}
 	.prev-row {
 		flex-wrap: wrap;
+	}
+	#email {
+		margin-top: 0px;
 	}
 	nav ul {
 		flex-direction: column;
