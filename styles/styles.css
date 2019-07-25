@@ -18,7 +18,8 @@ h1 {
 	color: #fff;
 	font-weight: 300;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
+	margin-left: -4px;
 	z-index: 1;
 }
 
@@ -49,8 +50,8 @@ ul {
 .home-header {
 	display: flex;
 	flex-direction: column;
-	max-width: 601px;
-	align-items: center;
+	margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .header-container {
@@ -70,11 +71,11 @@ ul {
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
   z-index: 0;
-  -webkit-transition: all 0.5s ease;  
-  -moz-transition: all 0.5s ease;  
-  -o-transition: all 0.5s ease;  
-  -ms-transition: all 0.5s ease;  
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.35s ease;  
+  -moz-transition: all 0.35s ease;  
+  -o-transition: all 0.35s ease;  
+  -ms-transition: all 0.35s ease;  
+  transition: all 0.35s ease;
 }
 
 .transition-active {
@@ -96,6 +97,59 @@ ul {
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
+  -webkit-transition: all 0.35s ease;  
+  -moz-transition: all 0.35s ease;  
+  -o-transition: all 0.35s ease;  
+  -ms-transition: all 0.35s ease;  
+  transition: all 0.35s ease;
+}
+
+.pink-transition-active {
+	width: 125px;
+  height: 700px;
+  top: -200px;
+  right: 45px;
+  z-index: 0;
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+}
+
+.about-me {
+	display: flex;
+	z-index: 1;
+}
+
+.about-me p {
+	font-size: 16px;
+	text-align: justify;
+	max-width: 550px;
+}
+
+.home-links {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 0 0 50px;
+	z-index: 1;
+}
+
+.home-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 10px 0 0 0;
+	color: #fff;
+}
+
+#email {
+	margin-top: 3px;
+}
+
+.home-links a:hover {
+	color: #f61067;
 }
 
 .subpage-container {
@@ -155,6 +209,7 @@ ul {
 	margin-top: 0px;
 }
 
+
 /*Styles for non-home pages*/
 
 .page-header {
@@ -179,14 +234,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-
-.nav-home a {
-	color: #fff;
-}
-
-.nav-home a:hover {
-	color: #f61067;
 }
 
 .nav-list {
@@ -231,8 +278,17 @@ nav li:hover {
 }
 
 @media screen and (max-width: 768px) {
+	.info {
+		flex-direction: column;
+	}
+	.home-links {
+		margin: 0px;
+	}
 	.prev-row {
 		flex-wrap: wrap;
+	}
+	#email {
+		margin-top: 0px;
 	}
 	nav ul {
 		flex-direction: column;
