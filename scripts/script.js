@@ -1,5 +1,5 @@
 $(".transition").click(function(e) {
-	e.preventDefault();
+  e.preventDefault();
   var linkUrl = $(this).attr('href');
   setTimeout(function(url) { 
     window.location = url;
@@ -7,13 +7,13 @@ $(".transition").click(function(e) {
   $('.stripe').addClass('transition-active');
   setTimeout(function () { 
       $('.stripe').removeClass('transition-active');
-  }, 300);
+  }, 400);
 });
 
 var home = 'https://piersmg.github.io/';
 
 $(function() {
-	var referrer = document.referrer;
+  var referrer = document.referrer;
   if (referrer != home) {
     $('.pink-cover').css( "display", "none" );
   }

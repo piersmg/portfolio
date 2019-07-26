@@ -88,7 +88,7 @@ ul {
 .transition-active {
 	z-index: 10;
   right: -1000px;
-  top: -1200px;
+  top: -1250px;
   width: 2700px;
   height: 2700px;
 }
