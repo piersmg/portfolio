@@ -3,11 +3,11 @@ $(".transition").click(function(e) {
   var linkUrl = $(this).attr('href');
   setTimeout(function(url) { 
     window.location = url;
-  }, 300, linkUrl);
+  }, 400, linkUrl);
   $('.stripe').addClass('transition-active');
   setTimeout(function () { 
       $('.stripe').removeClass('transition-active');
-  }, 400);
+  }, 500);
 });
 
 var home = 'https://piersmg.github.io/';
