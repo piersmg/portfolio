@@ -39,10 +39,17 @@ h2 {
 
 #triple img {
 	max-width: 300px;
+	max-height: 442px;
 }
 
-#mi-sol-menu, #mi-sol-final img {
+#mi-sol-menu img {
 	max-width: 400px;
+	max-height: 609px;
+}
+
+#mi-sol-final img { 
+	max-width: 400px;
+	max-height: 403px;
 }
 
 .guidelines {
