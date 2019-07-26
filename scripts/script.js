@@ -7,7 +7,7 @@ $(".transition").click(function(e) {
   $('.stripe').addClass('transition-active');
   setTimeout(function () { 
       $('.stripe').removeClass('transition-active');
-  }, 299);
+  }, 400);
 });
 
 var home = 'https://piersmg.github.io/';
