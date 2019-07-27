@@ -207,6 +207,13 @@ ul {
 	bottom: 0;
 }
 
+/*Style for IE10 to fix home text behind preview images on home*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sub-preview-text {
+		left: 200px;
+	}
+}
+
 .sub-preview-text h2 {
 	margin-bottom: 5px;
 }
@@ -241,6 +248,24 @@ ul {
 	flex-direction: column;
 	z-index: 1;
 	max-width: 700px;
+}
+
+.side-by-side {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.side-by-side img {
+	height: 100%;
+}
+
+.left {
+	margin-right: 5px;
+}
+
+.right {
+	margin-left: 5px;
 }
 
 nav {

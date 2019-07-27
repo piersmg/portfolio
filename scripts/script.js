@@ -21,3 +21,11 @@ $(function() {
     $('.pink-cover').toggleClass('pink-transition-active');
   }
 });
+
+// Fix height issue for images on Firefox
+$(function() {
+  var isFF = 'MozAppearance' in document.documentElement.style;
+  if (isFF) {
+    $('.side-by-side img').css('height','auto');
+  }
+});
