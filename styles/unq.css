@@ -2,24 +2,6 @@ img {
 	margin: 60px 0;
 }
 
-.side-by-side {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.side-by-side img {
-	height: 100%;
-}
-
-.left {
-	margin-right: 5px;
-}
-
-.right {
-	margin-left: 5px;
-}
-
 @media screen and (max-width: 1200px) {
 	.side-by-side {
 		flex-direction: column;
