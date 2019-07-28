@@ -88,19 +88,19 @@ ul {
 .transition-active {
 	z-index: 10;
   right: -1000px;
-  top: -1250px;
+  top: -1650px;
   width: 3500px;
-  height: 3500px;
+  height: 3800px;
 }
 
 .pink-cover {
 	background-color: #f61067;
 	width: 3500px;
-  height: 3500px;
+  height: 3800px;
 	position: absolute;
   z-index: 10;
   right: -1000px;
-  top: -1200px;
+  top: -1650px;
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
