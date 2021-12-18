@@ -18,8 +18,8 @@ reportWebVitals();
 
 const darkSwitch = document.getElementById('darkLightSwitch');
 
-function themeChange() {
-  if (localStorage.theme === 'dark') {
+function themeChange(colour) {
+  if (colour === 'light') {
     localStorage.setItem('theme', 'light')
     document.documentElement.classList.remove('dark')
   } else {
@@ -28,12 +28,14 @@ function themeChange() {
   }
 }
 
-window.addEventListener('load', (event) => {
-  themeChange();
+window.addEventListener('load', (e) => {
+  let theme = localStorage.theme;
+  themeChange(theme);
 });
 
 darkSwitch.addEventListener('click', (e)=>{
-  themeChange();
+  let theme = localStorage.theme;
+  theme === 'dark' ? themeChange('light') : themeChange('dark');
 });
 
 

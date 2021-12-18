@@ -5,8 +5,7 @@ const SideBar = () => {
     return (
         <div className="fixed top-0 md:left-0 -left-16 h-screen w-16 m-0
                         flex flex-col
-                        dark:bg-sideBar dark:text-white
-                        bg-gray-100 text-gray-900
+                        dark:bg-sideBar bg-gray-100 text-gray-900
                         shadow-lg">
             <div className='flex flex-col relative h-full'>
                 <SideBarIcon icon={<FaGlobeAmericas size="28" />} text="Home"/>
