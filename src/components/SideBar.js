@@ -25,15 +25,15 @@ const SideBar = () => {
 		</div>
 	)
 };
-const SideBarIcon = ({icon, text}) => (
-	<div className="sidebar-icon group">
-		{icon}
-		{text.length > 0 &&
-		<span className="sidebar-tooltip group-hover:scale-100">
-				{text}
-		</span>
-		}
-	</div>
-)
+// const SideBarIcon = ({icon, text}) => (
+// 	<div className="sidebar-icon group">
+// 		{icon}
+// 		{text.length > 0 &&
+// 		<span className="sidebar-tooltip group-hover:scale-100">
+// 				{text}
+// 		</span>
+// 		}
+// 	</div>
+// )
 
 export default SideBar;
