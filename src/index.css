@@ -10,7 +10,27 @@
 }
 
 @layer components {
-  .sidebar-icon {
+  h1 {
+    @apply text-3xl
+  }
+  main {
+    width: calc((100% / 12) * 11);
+    max-width: 2280px;
+    padding: 0px calc((100% / 11) * .5);
+  }
+  nav {
+    transform: translateY(-50%);
+  }
+  .nav-items a {
+    @apply mb-4 font-bold relative hover:text-secondary
+  }
+  .nav-items a:before {
+    @apply absolute top-2/4 -left-16 w-12 border-b-[1px] border-secondary content-[''] scale-0
+  }
+  .nav-items a.active:before {
+    @apply scale-100 origin-left transition-transform
+  }
+  /* .sidebar-icon {
     @apply relative flex items-center justify-center
       h-12 w-12 mt-2 mb-2 mx-auto
       bg-gray-200 dark:bg-zinc-700 text-secondary
@@ -19,6 +39,12 @@
       rounded-3xl hover:rounded-xl
       transition-all duration-300 ease-linear
       cursor-pointer;
+  } 
+  nav a.active .sidebar-icon {
+    @apply 
+      bg-secondary text-white
+      dark:text-white hover:bg-secondary
+      rounded-xl
   }
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max left-14
@@ -28,12 +54,7 @@
       text-xs font-bold
       transition-all duration-100 scale-0 origin-left
   }
-  #darkLightSwitch {
-    @apply mt-auto mx-auto mb-4 text-gray-400
-    hover:text-secondary dark:hover:text-secondary
-    cursor-pointer
-  }
-  #chevron {
+ #chevron {
     @apply absolute bottom-4 -right-8
-  }
+  } */
 }
