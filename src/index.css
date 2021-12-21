@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&family=Unica+One&display=swap');
+
 *,
 *::before,
 *::after {
@@ -10,9 +13,6 @@
 }
 
 @layer components {
-  h1 {
-    @apply text-3xl
-  }
   main {
     width: calc((100% / 12) * 11);
     max-width: 2280px;
@@ -29,6 +29,24 @@
   }
   .nav-items a.active:before {
     @apply scale-100 origin-left transition-transform
+  }
+  #darkLightSwitch.in {
+    transform: rotateY(-90deg) translateZ(0px);
+  }
+  #darkLightSwitch.out {
+    transform: rotateY(90deg) translateZ(14px);
+  }
+  form input, form textarea, form button {
+    outline: none !important;
+  }
+  form input, form textarea {
+    @apply appearance-none w-full bg-transparent border-b-[1px] border-b-primary dark:border-b-white active:border-b-secondary focus:border-b-secondary dark:active:border-b-secondary dark:focus:border-b-secondary
+  }
+  form label {
+    @apply absolute translate-y-4 scale-100 -top-4 left-0 text-primary dark:text-white transition-all
+  }
+  form input:focus + label, form textarea:focus + label, form input:not(:placeholder-shown) + label, form textarea:not(:placeholder-shown) + label {
+    @apply -translate-y-2 -left-[2px] scale-90 text-secondary
   }
   /* .sidebar-icon {
     @apply relative flex items-center justify-center

@@ -11,6 +11,10 @@ module.exports = {
         secondary: '#f61067',
       }
     },
+    fontFamily: {
+      sans: ['Jost', 'Helvetica', 'Arial', 'sans-serif'],
+      headline: ['Unica One', 'Helvetica', 'Arial', 'sans-serif'],
+    },
   },
   plugins: [],
 }

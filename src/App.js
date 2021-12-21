@@ -9,6 +9,7 @@ import Content from "./components/Content";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Success from "./pages/Success";
 
 function App() {
   console.log('rendered');
@@ -18,6 +19,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="success" element={<Success />} />
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>
@@ -26,10 +28,10 @@ function App() {
 
 function Layout() {
   return (
-    <div className="flex bg-white dark:bg-primary h-screen text-black dark:text-white">
+    <div className="flex bg-white dark:bg-primary text-black dark:text-white min-h-screen">
       <SideBar />
       <main className="my-0 mx-auto">
-        <div className="flex flex-col pl-16 pt-16 pr-16">
+        <div className="flex flex-col p-16">
           <Outlet />
         </div>
       </main>

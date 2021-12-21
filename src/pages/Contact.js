@@ -3,10 +3,11 @@ import Form from "../components/Form";
 
 const Contact = () => {
     return (
-        <div>
+        <div className="h-[calc(100vh_-_8rem)]">
             <Content 
                 title="Get in touch with me"
                 body=""
+                optionalClass="mx-auto"
             />
             <Form />
         </div>

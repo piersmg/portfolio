@@ -37,7 +37,17 @@ window.addEventListener('load', (e) => {
 });
 
 darkSwitch.addEventListener('click', (e)=>{
-  console.log('click');
+  // new Promise(function(fulfill, reject){
+  //   darkSwitch.classList.add('out');
+  // }).then(function(result){
+  //   setTimeout(() => {
+  //     darkSwitch.classList.replace('out', 'in');
+  //   }, 150);
+  // }).then(function(result){
+  //   setTimeout(() => {
+  //     darkSwitch.classList.remove('in');
+  //   }, 150);
+  // });
   let theme = localStorage.theme;
   theme === 'dark' ? themeChange('light') : themeChange('dark');
 });
