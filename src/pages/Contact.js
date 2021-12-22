@@ -1,5 +1,6 @@
 import Content from "../components/Content";
 import Form from "../components/Form";
+import '../styles/form.css';
 
 const Contact = () => {
     return (
