@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .project-item::after {
+    @apply absolute top-0 right-0 left-0 bottom-0 h-full w-full content-[''] opacity-0 transition-all
+  }
+  .project-item:hover::after {
+    @apply bg-gradient-to-t from-secondary opacity-50
+  }
+}

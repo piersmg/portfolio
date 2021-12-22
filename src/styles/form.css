@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    form input, form textarea, form button {
+        outline: none !important;
+    }
+    form input, form textarea {
+        @apply appearance-none w-full bg-transparent border-b-[1px] border-b-primary dark:border-b-white active:border-b-secondary focus:border-b-secondary dark:active:border-b-secondary dark:focus:border-b-secondary
+    }
+    form label {
+        @apply absolute translate-y-4 scale-100 -top-4 left-0 text-primary dark:text-white transition-all
+    }
+    form input:focus + label, form textarea:focus + label, form input:not(:placeholder-shown) + label, form textarea:not(:placeholder-shown) + label {
+        @apply -translate-y-2 -left-[2px] scale-90 text-secondary
+    }
+}
