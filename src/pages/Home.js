@@ -1,8 +1,8 @@
 import Content from "../components/Content";
-import MI from '../images/logo.png';
-import UNQ from '../images/logo.png';
-import HMAN from '../images/logo.png';
-import EMP from '../images/logo.png';
+import MI from '../images/mi';
+import UNQ from '../images/unq.jpg';
+import HMAN from '../images/herniman.jpg';
+import EMP from '../images/empower.jpg';
 
 const projects = [
     {
