@@ -1,6 +1,6 @@
 const Form = () => {
 	return (
-		<div className="flex flex-col justify-center items-center h-full">
+		<div className="flex flex-col justify-center items-center">
 			<form className="min-w-[500px]" name="contact" action="/success" method="POST" data-netlify="true">
 				<div className="relative mb-8">
 					<input placeholder=" " type="text" name="name" />   

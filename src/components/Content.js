@@ -1,4 +1,4 @@
-const Content = ({title, body, optionalClass}) => {
+const Content = ({title, body, optionalClass, center}) => {
     let classesToAdd = 'text-4xl';
     if(optionalClass !== undefined) {
         if (optionalClass.indexOf('text-') > -1) {
@@ -8,7 +8,7 @@ const Content = ({title, body, optionalClass}) => {
         classesToAdd = `${optionalClass} ${classesToAdd}`;
     }
     return (
-        <div className='flex flex-col'>
+        <div className={`flex flex-col ${center === true ? 'items-center justify-center h-full' : ''}`}>
             <h1 className={`${classesToAdd}`}>
                 {title}
             </h1>
