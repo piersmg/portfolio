@@ -5,10 +5,12 @@ import {
 } from "react-router-dom";
 import './styles/index.css';
 import App from './App';
+import ScrollToTop from "./components/ScrollToTop";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
+    <ScrollToTop />
     <App />
   </BrowserRouter>,
   document.getElementById("root")
