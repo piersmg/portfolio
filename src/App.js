@@ -13,7 +13,6 @@ import MarketInvoice from "./pages/MarketInvoice";
 import Success from "./pages/Success";
 
 function App() {
-  console.log('rendered');
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

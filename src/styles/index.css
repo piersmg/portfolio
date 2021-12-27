@@ -18,6 +18,12 @@
     max-width: 2280px;
     padding: 0px calc((100% / 11) * .5);
   }
+  p {
+    @apply mb-3
+  }
+  p a {
+    @apply underline hover:text-secondary
+  }
   nav {
     transform: translateY(-50%);
   }
@@ -35,6 +41,15 @@
   }
   #darkLightSwitch.out {
     transform: rotateY(90deg) translateZ(14px);
+  }
+  .content-body p, .content-body h2 {
+    @apply max-w-3xl
+  }
+  .content-body img {
+    @apply md:mt-12 mb-12 md:min-w-0 w-full max-w-4xl
+  }
+  .content-body img:first-child {
+    @apply mt-12
   }
   /* .sidebar-icon {
     @apply relative flex items-center justify-center
