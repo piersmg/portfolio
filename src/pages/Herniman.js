@@ -3,7 +3,7 @@ import Content from "../components/Content";
 const MarketInvoice = () => {
     return (
         <Content 
-            title="MarketInvoice"
+            title="Herniman"
             optionalClass="mx-auto mb-8"
             body={<Body />}
         />
@@ -31,8 +31,8 @@ const Body = () => {
                 <div className="flex flex-col">
                     <p className="text-xl">Tools used</p>
                     <ul>
+                        <li>HTML/CSS/JS</li>
                         <li>React/Redux</li>
-                        <li>HTML/CSS/Vanilla JS</li>
                         <li>Sketch</li>
                         <li>Photoshop</li>
                         <li>InVision</li>

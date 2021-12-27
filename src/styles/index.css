@@ -24,17 +24,38 @@
   p a {
     @apply underline hover:text-secondary
   }
+  #nav-wrap.active {
+    @apply w-full bg-white dark:bg-primary
+  }
+  #menuToggle span {
+    @apply block w-6 h-[2px] mb-[6px] relative bg-white rounded-sm z-10 transition-all origin-top-right
+  }
+  #menuToggle span:last-child {
+    @apply mb-0
+  }
+  #menuToggle input:checked ~ span:nth-child(2) {
+    transform: rotate(-45deg) translate(-4px, -3px);
+    height: 3px;
+  }
+  #menuToggle input:checked ~ span:nth-child(3) {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  #menuToggle input:checked ~ span:last-of-type {
+    transform: rotate(45deg) translate(-1px, 3px);
+    height: 3px;
+  }
   nav {
     transform: translateY(-50%);
   }
   .nav-items a {
-    @apply mb-4 font-bold relative hover:text-secondary
+    @apply mb-8 md:mb-4 px-4 md:px-0 font-bold text-xl md:text-base relative hover:text-secondary bg-white dark:bg-primary
   }
   .nav-items a:before {
-    @apply absolute top-2/4 -left-16 w-12 border-b-[1px] border-secondary content-[''] scale-0
+    @apply absolute top-2/4 -left-[50vw] md:-left-16 w-[150vw] md:w-12 border-b-[1px] border-secondary content-[''] scale-0 z-[-1]
   }
   .nav-items a.active:before {
-    @apply scale-100 origin-left transition-transform
+    @apply scale-100 transition-transform
   }
   #darkLightSwitch.in {
     transform: rotateY(-90deg) translateZ(0px);

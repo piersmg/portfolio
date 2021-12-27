@@ -1,7 +1,9 @@
 const Content = ({title, body, optionalClass, center}) => {
+    const regex = /text-[0-9]+/;
     let classesToAdd = 'text-4xl';
     if(optionalClass !== undefined) {
-        if (optionalClass.indexOf('text-') > -1) {
+        console.log(optionalClass.search(regex))
+        if (optionalClass.search(regex) > -1) {
             classesToAdd = optionalClass.substring(optionalClass.indexOf('text-'), optionalClass.indexOf(' '));
             optionalClass.replace(classesToAdd, '');
         }

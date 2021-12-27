@@ -1,15 +1,12 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  Outlet
-} from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import Content from "./components/Content";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MarketInvoice from "./pages/MarketInvoice";
+import Herniman from "./pages/Herniman";
 import Success from "./pages/Success";
 
 function App() {
@@ -20,8 +17,8 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="marketinvoice" element={<MarketInvoice />} />
-        {/* <Route path="herniman" element={<Herniman />} />
-        <Route path="unq" element={<UNQ />} />
+        <Route path="herniman" element={<Herniman />} />
+        {/* <Route path="unq" element={<UNQ />} />
         <Route path="empower" element={<Empower />} /> */}
         <Route path="success" element={<Success />} />
         <Route path="*" element={<Error />} />

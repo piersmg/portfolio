@@ -5,7 +5,7 @@ const About = () => {
         <div className="h-[calc(100vh_-_8rem)]">
             <Content 
                 title="About me"
-                optionalClass="mx-auto mb-8"
+                optionalClass="mx-auto mb-8 text-center"
                 body={<Body />}
                 center={true}
             />
