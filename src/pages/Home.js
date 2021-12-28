@@ -51,13 +51,13 @@ const projects = [
         "title": "MarketFinance",
         "desc": "React (previously MarketInvoice)",
         "image": "/images/mi.jpg",
-        "link": "/marketinvoice"
+        "link": "/marketfinance"
     },
     {
         "title": "Ultimate News Quiz",
         "desc": "Wordpress",
         "image": "/images/unq.jpg",
-        "link": "/unq"
+        "link": "/ultimate-news-quiz"
     }
 ]
 
@@ -90,7 +90,7 @@ function GridTile(props) {
             <img className="w-full h-full object-cover" src={`${project.image}`} alt="" loading={`${index > 3 ? 'lazy' : ''}`} />
             <div className="absolute bottom-1 left-3 sm:left-6 transition-opacity sm:pb-4 text-white z-[1]">
                 <h2 className="sm:text-3xl text-[100%]">{project.title}</h2>
-                <p className="hidden sm:flex">{project.desc}</p>
+                <p className="hidden sm:flex mb-0">{project.desc}</p>
             </div>
         </Link>
     )

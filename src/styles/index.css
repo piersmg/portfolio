@@ -67,7 +67,10 @@
     @apply max-w-3xl
   }
   .content-body img {
-    @apply md:mt-12 mb-12 md:min-w-0 w-full max-w-4xl
+    @apply md:mt-12 mb-12 md:min-w-0 w-full max-w-4xl shadow-md dark:shadow-none
+  }
+  .content-body img + img {
+    @apply ml-2
   }
   .content-body img:first-child {
     @apply mt-12
