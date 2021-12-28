@@ -75,31 +75,12 @@
   .content-body img:first-child {
     @apply mt-12
   }
-  /* .sidebar-icon {
-    @apply relative flex items-center justify-center
-      h-12 w-12 mt-2 mb-2 mx-auto
-      bg-gray-200 dark:bg-zinc-700 text-secondary
-      hover:bg-secondary hover:text-white
-      dark:hover:text-white dark:hover:bg-secondary
-      rounded-3xl hover:rounded-xl
-      transition-all duration-300 ease-linear
-      cursor-pointer;
-  } 
-  nav a.active .sidebar-icon {
-    @apply 
-      bg-secondary text-white
-      dark:text-white hover:bg-secondary
-      rounded-xl
+  @media (max-width: 768px) {
+    #nav-wrap nav, #nav-wrap #darkLightSwitch {
+      @apply hidden
+    }
+    #nav-wrap.active nav, #nav-wrap.active #darkLightSwitch {
+      @apply flex
+    }
   }
-  .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14
-      rounded-md shadow-md
-      text-black bg-gray-200
-      dark:text-white dark:bg-zinc-700
-      text-xs font-bold
-      transition-all duration-100 scale-0 origin-left
-  }
- #chevron {
-    @apply absolute bottom-4 -right-8
-  } */
 }
