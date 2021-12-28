@@ -8,7 +8,7 @@ const Contact = () => {
             <Content 
                 title="Get in touch with me"
                 body=""
-                optionalClass="mx-auto mb-8"
+                optionalClass="mx-auto mb-8 text-center"
             />
             <Form />
         </div>
