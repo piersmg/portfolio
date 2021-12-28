@@ -28,7 +28,7 @@ const SideBar = () => {
 				</div>
 				{/* <div id="chevron" className="text-primary dark:text-white"><FaChevronLeft size="20" /></div> */}
 			</nav>
-			<div id="darkLightSwitch" className="hidden md:flex absolute bottom-8 left-8 md:left-16 lg:left-8 text-primary dark:text-white hover:text-secondary dark:hover:text-secondary cursor-pointer transition-transform">
+			<div id="darkLightSwitch" className="flex absolute bottom-8 left-8 md:left-16 lg:left-8 text-primary dark:text-white hover:text-secondary dark:hover:text-secondary cursor-pointer transition-transform">
 				<BsFillSunFill className='hidden dark:block' size="23" /><FaMoon className="block dark:hidden" size="20" />
 				{/* <div id="circle"></div> */}
 			</div>

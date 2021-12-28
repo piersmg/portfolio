@@ -4,7 +4,7 @@ const MarketInvoice = () => {
     return (
         <Content 
             title="Empower Health and Fitness"
-            optionalClass="mx-auto mb-8"
+            optionalClass="mx-auto mb-8 text-center"
             body={<Body />}
         />
     )
