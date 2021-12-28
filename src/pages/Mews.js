@@ -4,7 +4,7 @@ const MarketInvoice = () => {
     return (
         <Content 
             title="Mews"
-            optionalClass="mx-auto mb-8"
+            optionalClass="mx-auto mb-8 text-center"
             body={<Body />}
         />
     )

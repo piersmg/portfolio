@@ -4,7 +4,7 @@ const MarketInvoice = () => {
     return (
         <Content 
             title="Ultimate News Quiz"
-            optionalClass="mx-auto mb-8"
+            optionalClass="mx-auto mb-8 text-center"
             body={<Body />}
         />
     )
