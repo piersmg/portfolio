@@ -1,7 +1,8 @@
 const Form = () => {
 	return (
 		<div className="flex flex-col justify-center items-center w-full md:max-w-[500px]">
-			<form className="w-full" name="contact" method="POST" data-netlify-recaptcha="true" id="contact-form" data-netlify="true" onSubmit={handleSubmit}>
+			<form className="w-full" name="contact" method="POST" action="/success" data-netlify-recaptcha="true" id="contact-form" data-netlify="true">
+				<input type="hidden" name="form-name" value="contact" />
 				<div className="relative mb-8">
 					<input placeholder=" " type="text" name="name" />   
 					<label htmlFor="name">Name: </label>
@@ -23,19 +24,19 @@ const Form = () => {
 	)
 };
 
-const handleSubmit = (e) => {
-	e.preventDefault()
-	let form = document.getElementById('contact-form');
-	let formData = new FormData(form)
-	fetch('/', {
-		method: 'POST',
-		headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		body: new URLSearchParams(formData).toString()
-	}).then(() => {
-		console.log('Form successfully submitted');
-		form.remove();
-		document.getElementsByClassName('content-body')[0].insertAdjacentHTML('afterbegin', '<p>Thanks for getting in touch. I\'ll get back to you soon.</p>');
-	}).catch((error) => alert(error))
-}
+// const handleSubmit = (e) => {
+// 	e.preventDefault()
+// 	let form = document.getElementById('contact-form');
+// 	let formData = new FormData(form)
+// 	fetch('/', {
+// 		method: 'POST',
+// 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+// 		body: new URLSearchParams(formData).toString()
+// 	}).then(() => {
+// 		console.log('Form successfully submitted');
+// 		form.remove();
+// 		document.getElementsByClassName('content-body')[0].insertAdjacentHTML('afterbegin', '<p>Thanks for getting in touch. I\'ll get back to you soon.</p>');
+// 	}).catch((error) => alert(error))
+// }
 
 export default Form;
