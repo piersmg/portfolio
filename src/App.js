@@ -39,7 +39,7 @@ function App() {
 
 function Layout() {
   return (
-    <div className="flex bg-white dark:bg-primary text-black dark:text-white min-h-screen">
+    <div className="flex bg-white dark:bg-primary text-primary dark:text-white min-h-screen">
       <SideBar />
       <main className="my-0 mx-auto">
         <div className="flex flex-col md:p-16 sm:p-8 py-8">
