@@ -57,12 +57,6 @@
   .nav-items a.active:before {
     @apply scale-100 transition-transform
   }
-  html.dark #darkLightSwitch #sun, html #darkLightSwitch #moon {
-    @apply flex;
-  }
-  html #darkLightSwitch #sun, html.dark #darkLightSwitch #moon {
-    @apply hidden;
-  }
   /* #darkLightSwitch.in {
     transform: rotateY(-90deg) translateZ(0px);
   }
