@@ -75,7 +75,7 @@
   .content-body img:first-child {
     @apply mt-12
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     #nav-wrap nav, #nav-wrap #darkLightSwitch {
       @apply hidden
     }
