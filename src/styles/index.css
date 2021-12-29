@@ -49,7 +49,7 @@
     transform: translateY(-50%);
   }
   .nav-items a {
-    @apply mb-8 md:mb-4 px-4 md:px-0 font-bold text-xl md:text-base relative hover:text-secondary bg-white dark:bg-primary
+    @apply mb-8 md:mb-4 px-4 md:px-0 font-bold text-xl md:text-base relative hover:text-secondary bg-white dark:bg-primary md:bg-transparent dark:md:bg-transparent
   }
   .nav-items a:before {
     @apply absolute top-2/4 -left-[50vw] md:-left-16 w-[150vw] md:w-12 border-b-[1px] border-secondary content-[''] scale-0 z-[-1]
@@ -57,6 +57,9 @@
   .nav-items a.active:before {
     @apply scale-100 transition-transform
   }
+  /* #circle {
+    transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1), opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  } */
   /* #darkLightSwitch.in {
     transform: rotateY(-90deg) translateZ(0px);
   }

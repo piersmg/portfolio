@@ -80,7 +80,7 @@ const Body = () => {
             <p>After designing the website, I felt it was important that the style remained cohesive and consistent no matter who contributed to the website in the future and so I wrote these website guidelines as part of the wider brand guidelines.</p>
             <p>Standarisation, standardisation, standardisation.</p>
 
-            <div className="grid grid-flow-row gap-4 md:grid-cols-2 grid-cols-1">
+            <div className="grid grid-flow-row gap-2 md:grid-cols-2 grid-cols-1">
                 <div className="flex flex-col">
                     <img className="!mb-2" src="images/mi/guidelines1.jpg" alt="MarketFinance brand colour guidelines" loading="lazy" />
                     <p className="text-sm">Laying out the brand colours, any variations, and use cases for the website.</p>
