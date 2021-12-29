@@ -11,7 +11,7 @@ const SideBar = () => {
 				<span></span>
 				<span></span>
 			</div>
-			<nav className='hidden md:flex flex-col absolute top-2/4 w-full md:w-auto'>
+			<nav className='flex flex-col absolute top-2/4 w-full md:w-auto'>
 				<div className='nav-items flex flex-col md:ml-16 mx-auto justify-center items-center md:items-start'>
 					<NavLink className={({ isActive }) => isActive ? "active" : ""} to={"/"} >
 						Home
@@ -28,8 +28,8 @@ const SideBar = () => {
 				</div>
 				{/* <div id="chevron" className="text-primary dark:text-white"><FaChevronLeft size="20" /></div> */}
 			</nav>
-			<div id="darkLightSwitch" className="flex absolute bottom-8 left-8 md:left-16 lg:left-8 text-primary dark:text-white hover:text-secondary dark:hover:text-secondary cursor-pointer transition-transform">
-				<BsFillSunFill className='hidden dark:block' size="23" /><FaMoon className="block dark:hidden" size="20" />
+			<div id="darkLightSwitch" className="absolute bottom-8 left-8 md:left-16 lg:left-8 text-primary dark:text-white hover:text-secondary dark:hover:text-secondary cursor-pointer transition-transform">
+				<BsFillSunFill className='hidden dark:flex' size="23" /><FaMoon className="flex dark:hidden" size="20" />
 				{/* <div id="circle"></div> */}
 			</div>
 		</div>
@@ -38,27 +38,19 @@ const SideBar = () => {
 
 function navOpenClose(e) {
 	const nav = document.getElementById('nav-wrap');
-	const navInner = nav.querySelector('nav');
-	const darkLightSwitch = nav.querySelector('#darkLightSwitch');
 	const navItems = nav.querySelectorAll('.nav-items a');
 	if(e.target.checked === true) {
 		nav.classList.add('active');
-		navInner.classList.remove('hidden');
-		darkLightSwitch.classList.remove('hidden');
 		document.body.style.overflow = 'hidden';
 		navItems.forEach(item => {
 			item.addEventListener('click', (e) => {
 				nav.classList.remove('active');
-				navInner.classList.add('hidden');
-				darkLightSwitch.classList.add('hidden');
 				document.body.style.overflow = 'auto';
 				nav.querySelector('#menuToggle input').checked = false;
 			})
 		});
 	} else {
 		nav.classList.remove('active');
-		navInner.classList.add('hidden');
-		darkLightSwitch.classList.add('hidden');
 		document.body.style.overflow = 'auto';
 	}
 }

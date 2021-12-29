@@ -1,7 +1,7 @@
 const Form = () => {
 	return (
 		<div className="flex flex-col justify-center items-center w-full md:max-w-[500px]">
-			<form className="w-full" name="contact" action="/success" method="POST" data-netlify-recaptcha="true" netlify>
+			<form className="w-full" name="contact" method="POST" data-netlify-recaptcha="true" netlify>
 				<div className="relative mb-8">
 					<input placeholder=" " type="text" name="name" />   
 					<label htmlFor="name">Name: </label>
