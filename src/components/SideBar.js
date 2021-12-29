@@ -4,7 +4,7 @@ import { BsFillSunFill } from "react-icons/bs";
 
 const SideBar = () => {
 	return (
-		<div className="fixed flex top-0 md:-left-8 lg:left-0 h-screen md:w-16 m-0 flex-col bg-white dark:bg-primary md:bg-transparent z-20" id="nav-wrap">
+		<div className="fixed flex top-0 md:-left-8 lg:left-0 h-screen md:w-16 m-0 flex-col bg-white dark:bg-primary md:bg-transparent dark:md:bg-transparent z-20" id="nav-wrap">
 			<div className="flex md:hidden flex-col rounded-full bg-secondary fixed right-4 bottom-4 p-3 h-14 w-14 justify-center items-center shadow-md overflow-hidden" id="menuToggle">
 				<input type="checkbox" className="block w-10 h-10 absolute cursor-pointer opacity-0 z-20" onClick={navOpenClose}/>
 				<span></span>
@@ -30,7 +30,6 @@ const SideBar = () => {
 			</nav>
 			<div id="darkLightSwitch" className="fixed bottom-8 left-8 md:left-16 lg:left-8 text-primary dark:text-white hover:text-secondary dark:hover:text-secondary cursor-pointer transition-transform">
 				<BsFillSunFill className="hidden dark:flex" size="23" /><FaMoon className="flex dark:hidden" size="20" />
-				{/* <div id="circle"></div> */}
 			</div>
 		</div>
 	)

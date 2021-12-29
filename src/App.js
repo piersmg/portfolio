@@ -39,13 +39,14 @@ function App() {
 
 function Layout() {
   return (
-    <div className="flex bg-white dark:bg-primary text-primary dark:text-white min-h-screen">
+    <div className="flex bg-primary text-primary dark:text-white min-h-screen">
       <SideBar />
-      <main className="my-0 mx-auto">
+      <main className="my-0 mx-auto z-[1]">
         <div className="flex flex-col md:p-16 sm:p-8 py-8">
           <Outlet />
         </div>
       </main>
+      {/* <div id="circle" className="bg-white h-10 w-10 dark:opacity-0 dark:scale-0 opacity-100 scale-[200] rounded-full fixed bottom-8 left-8 md:left-16 lg:left-8 z-0"></div> */}
     </div>
   );
 }
