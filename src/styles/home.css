@@ -8,23 +8,23 @@
     @apply opacity-70
   }
   .project-item {  
-    perspective: 2000px;
+    /* perspective: 2000px; */
     box-shadow: 0px 3px 9px 2px #000000ad;
-    perspective-origin: 50% 50%;
-    transform-style: preserve-3d;
+    /* perspective-origin: 50% 50%; */
+    /* transform-style: preserve-3d; */
   }
   .grid .project-item:hover {
     @apply opacity-100
   } 
   .project-item:hover {
-    transform: perspective(200cm) rotateX(17deg) scale(1.1);
+    /* transform: perspective(200cm) rotateX(17deg) scale(1.1); */
     box-shadow: 10px 20px 32px 1px #000000ab;
-    z-index: 10;
+    /* z-index: 10; */
   }
   .project-item::after {
     @apply bg-gradient-to-t from-black via-transparent opacity-30 absolute top-0 right-0 left-0 bottom-0 h-full w-full content-[''] transition-all
   }
-  .project-item:hover::after {
+  /* .project-item:hover::after {
     @apply md:bg-gradient-to-t md:from-black md:via-transparent md:opacity-50
-  }
+  } */
 }
