@@ -86,7 +86,7 @@ function GridTile(props) {
     const project = props.value;
     const index = props.index;
     return(
-        <Link to={project.link} className="project-item group relative will-change-transform origin-center max-h-[175px] md:max-h-72 2xl:max-h-96 transition-all">
+        <Link to={project.link} className="project-item group relative max-h-[175px] md:max-h-72 2xl:max-h-96 transition-all">
             <img className="w-full h-full object-cover" src={`${project.image}`} alt="" loading={`${index > 3 ? 'lazy' : ''}`} />
             <div className="absolute bottom-1 left-3 sm:left-6 transition-opacity sm:pb-4 text-white z-[1]">
                 <h2 className="sm:text-3xl text-[100%]">{project.title}</h2>

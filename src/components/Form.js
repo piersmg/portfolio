@@ -1,7 +1,8 @@
 const Form = () => {
 	return (
 		<div className="flex flex-col justify-center items-center w-full md:max-w-[500px]">
-			<form className="w-full" name="contact" method="POST" data-netlify-recaptcha="true" id="contact-form" onSubmit={handleSubmit}>
+			{/* <form className="w-full" name="contact" method="POST" data-netlify-recaptcha="true" id="contact-form" onSubmit={handleSubmit}> */}
+			<form className="w-full" name="contact" method="POST" action="" data-netlify-recaptcha="true" id="contact-form" data-netlify="true">
 				<input type="hidden" name="form-name" value="contact" />
 				<div className="relative mb-8">
 					<input placeholder=" " type="text" name="name" />   
@@ -24,41 +25,25 @@ const Form = () => {
 	)
 };
 
-function encode(data) {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&")
-}
+// function encode(data) {
+//     return Object.keys(data)
+//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//         .join("&")
+// }
 
-const handleSubmit = (event) => {
-	event.preventDefault()
-	let data = new FormData(event.target);
-	fetch("/", {
-		method: "POST",
-		headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		body: encode(data)
-	}).then(() => {
-		document.getElementsByClassName('content-body')[0].insertHTML = '<p>Thanks for getting in touch. I\'ll get back to you soon.</p>';
-	}).catch(error => {
-		console.log(error);
-		document.getElementsByClassName('content-body')[0].insertHTML = `<p>Oh no! there's an error: ${error}</p>`;
-	})
-}
-
-
-// const handleSubmit = (e) => {
-// 	e.preventDefault()
-// 	let form = document.getElementById('contact-form');
-// 	let formData = new FormData(form)
-// 	fetch('/', {
-// 		method: 'POST',
+// const handleSubmit = (event) => {
+// 	event.preventDefault()
+// 	let data = new FormData(event.target);
+// 	fetch("/", {
+// 		method: "POST",
 // 		headers: { "Content-Type": "application/x-www-form-urlencoded" },
-// 		body: new URLSearchParams(formData).toString()
+// 		body: encode(data)
 // 	}).then(() => {
-// 		console.log('Form successfully submitted');
-// 		form.remove();
-// 		document.getElementsByClassName('content-body')[0].insertAdjacentHTML('afterbegin', '<p>Thanks for getting in touch. I\'ll get back to you soon.</p>');
-// 	}).catch((error) => alert(error))
+// 		document.getElementsByClassName('content-body')[0].insertHTML = '<p>Thanks for getting in touch. I\'ll get back to you soon.</p>';
+// 	}).catch(error => {
+// 		console.log(error);
+// 		document.getElementsByClassName('content-body')[0].insertHTML = `<p>Oh no! there's an error: ${error}</p>`;
+// 	})
 // }
 
 export default Form;
